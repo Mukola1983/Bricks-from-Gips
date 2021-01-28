@@ -46,6 +46,10 @@ formOpen_02.addEventListener('click', function(){
 	}
 });
 */
+// Image on full screem
+
+
+// Image on full screem
 
 //Sliders
 $(document).ready(function() {
@@ -110,9 +114,60 @@ $(document).ready(function() {
 		fade:true,
 		asNavFor:".slider_2",
 	});
+//Slider 3
+	$('.slider_3').slick({
+		dots:true,
+		slidesToShow:3,
+		slidesToScroll:1,
+		centerMode:true,
+		asNavFor:".sliderBig_3",
+		responsive:[    //adaptive
+			{
+				breakpoint:700,
+				settings:{
+					arrows:false,
+					autoplay:true,
+					autoplaySpeed:1500,
+					slidesToShow:2,
+				}
+			}
+		]
+	});
+	$('.sliderBig_3').slick({
+		arrows: false,
+//		slidesToShow: 1,
+//		centerMode:true,
+		fade:true,
+		asNavFor:".slider_3",
+	});
+//Slider 3
 
-
-
+//Slider 4
+	$('.slider_4').slick({
+		dots:true,
+		slidesToShow:3,
+		slidesToScroll:1,
+		centerMode:true,
+		asNavFor:".sliderBig_4",
+		responsive:[    //adaptive
+			{
+				breakpoint:700,
+				settings:{
+					arrows:false,
+					autoplay:true,
+					autoplaySpeed:1500,
+					slidesToShow:2,
+				}
+			}
+		]
+	});
+	$('.sliderBig_4').slick({
+		arrows: false,
+//		slidesToShow: 1,
+//		centerMode:true,
+		fade:true,
+		asNavFor:".slider_4",
+	});
 
 //Open Close slider
 
