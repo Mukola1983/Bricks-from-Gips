@@ -480,6 +480,9 @@ body {
 .backMain {
   text-align: left;
 }
+.backMain a {
+  border-radius: 10px;
+}
 
 .menu__link {
   font-size: 20px;
@@ -618,16 +621,30 @@ body {
   padding: 50px 0;
 }
 
+.rowThird__title {
+  text-align: center;
+  margin: 30px 0 40px 0;
+  font-size: 40px;
+}
+
+.price {
+  background-color: rgba(189, 183, 107, 0.3);
+}
 .price__row {
   display: flex;
   border-bottom: 1px solid #7E5109;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 .price__row p {
   flex: 0 0 30%;
   font-size: 20px;
   border-right: 1px solid #7E5109;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .price__row p {
+    font-size: 15px;
+  }
 }
 .price__row p:last-child {
   border-right: none;
@@ -637,6 +654,11 @@ body {
   font-size: 30px;
   border-right: 1px solid #7E5109;
   text-align: center;
+}
+@media (max-width: 500px) {
+  #first_row p {
+    font-size: 20px;
+  }
 }
 
 .footer {

@@ -447,6 +447,9 @@ body {
 //Link to menu
 .backMain {
 	text-align: left;
+	& a{
+		border-radius: 10px;
+	}
 }
 .menu {
 	&__link {
@@ -602,21 +605,30 @@ body {
 }
 .container {
 }
-.rowFirst {
-	&__title {}
+.rowThird {
+	&__title {
+		text-align: center;
+		margin: 30px 0 40px 0;
+		font-size: 40px;
+	}
 }
 .title {
 }
 .price {
+	background-color: rgba(189, 183, 107, 0.3);
 	&__row {
 		display: flex;
 		border-bottom: 1px solid  #7E5109;
-		margin-bottom: 20px;
+		padding-bottom: 20px;
 		& p{
 			flex: 0 0 30%;
 			font-size: 20px;
 			border-right:1px solid  #7E5109 ;
 			text-align: center;
+			@media (max-width:500px){
+				font-size: 15px;
+			}
+
 		}
 		& p:last-child{
 			border-right:none;
@@ -629,6 +641,9 @@ body {
 		font-size: 30px;
 		border-right:1px solid  #7E5109 ;
 		text-align: center;
+		@media (max-width:500px){
+			font-size: 20px;
+		}
 	}
 }
 
