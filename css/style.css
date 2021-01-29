@@ -129,6 +129,11 @@ body {
   min-height: 500px;
   background: url("..//..//img/backgrounds/rem_02.jpg") 0 0/100% 100% no-repeat fixed;
 }
+@media (max-width: 500px) {
+  .header {
+    padding: 10px 0 0 0;
+  }
+}
 .header__top {
   background-color: rgba(245, 245, 220, 0.4);
   border-radius: 70px 0 70px 0;
@@ -143,7 +148,20 @@ body {
     display: block;
     margin: 0 auto;
     text-align: center;
+    padding: 10px 40px;
   }
+}
+.header__top-logo {
+  position: relative;
+  top: 50px;
+}
+@media (max-width: 700px) {
+  .header__top-logo {
+    max-width: 200px;
+  }
+}
+.header__top-logo img {
+  width: 100%;
 }
 .header__top-title {
   color: #800000;
@@ -459,6 +477,14 @@ body {
   text-align: center;
 }
 
+.backMain {
+  text-align: left;
+}
+
+.menu__link {
+  font-size: 20px;
+}
+
 .sliderBlock {
   margin: 100px 0;
   border: 1px solid #000;
@@ -564,7 +590,7 @@ body {
 }
 .sliderBig__item img {
   width: 100%;
-  height: 100;
+  height: 100%;
 }
 
 .sliderBig:hover {
@@ -586,6 +612,31 @@ body {
 .slick-track {
   display: flex;
   justify-content: space-between;
+}
+
+.rowThird {
+  padding: 50px 0;
+}
+
+.price__row {
+  display: flex;
+  border-bottom: 1px solid #7E5109;
+  margin-bottom: 20px;
+}
+.price__row p {
+  flex: 0 0 30%;
+  font-size: 20px;
+  border-right: 1px solid #7E5109;
+  text-align: center;
+}
+.price__row p:last-child {
+  border-right: none;
+}
+
+#first_row p {
+  font-size: 30px;
+  border-right: 1px solid #7E5109;
+  text-align: center;
 }
 
 .footer {

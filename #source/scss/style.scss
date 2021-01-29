@@ -69,6 +69,9 @@ body {
 	padding: 40px 0 0 0;
 	color:  #9ACD32 ;
 	min-height: 500px;
+	@media (max-width:500px){
+			padding: 10px 0 0 0;
+		}
 	background: url('..//..//img/backgrounds/rem_02.jpg') 0 0/100% 100% no-repeat fixed;
 //	background: url('..//..//img/icons/brick_01.png') repeat fixed;
 	&__top {
@@ -83,9 +86,19 @@ body {
 			display: block;
 			margin: 0 auto;
 			text-align: center;
+			padding: 10px 40px;
 		}
 	}
-	&__top-logo {}
+	&__top-logo {
+		position: relative;
+		top: 50px;
+		@media (max-width:700px){
+			max-width:200px;
+		}
+		& img{
+			width: 100%;
+		}
+	}
 	&__top-title {
 		color:  #800000 ;
 		border-bottom: 4px dotted  #800000 ;
@@ -431,6 +444,17 @@ body {
 	}
 }
 
+//Link to menu
+.backMain {
+	text-align: left;
+}
+.menu {
+	&__link {
+		font-size: 20px;
+	}
+}
+//Link to menu
+
 .sliderBlock {
 	margin: 100px 0;
 	border: 1px solid #000;
@@ -546,7 +570,7 @@ body {
 		box-shadow: 1px 1px 59px #7E5109;
 		& img{
 			width: 100%;
-			height:100;
+			height:100%;
 		}
 	}
 }
@@ -570,6 +594,45 @@ body {
 	display: flex;
 	justify-content: space-between;
 }
+
+
+//Third row
+.rowThird {
+	padding:50px 0;
+}
+.container {
+}
+.rowFirst {
+	&__title {}
+}
+.title {
+}
+.price {
+	&__row {
+		display: flex;
+		border-bottom: 1px solid  #7E5109;
+		margin-bottom: 20px;
+		& p{
+			flex: 0 0 30%;
+			font-size: 20px;
+			border-right:1px solid  #7E5109 ;
+			text-align: center;
+		}
+		& p:last-child{
+			border-right:none;
+		}
+	}
+	
+}
+#first_row{
+	& p{
+		font-size: 30px;
+		border-right:1px solid  #7E5109 ;
+		text-align: center;
+	}
+}
+
+//Third row end
 
 //Content
 
