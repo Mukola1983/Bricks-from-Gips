@@ -406,6 +406,60 @@ body {
   text-shadow: 2px 2px 5px #000;
 }
 
+.rowZero {
+  margin: 200px 0;
+  transition-duration: 1.2s;
+}
+.rowZero_row {
+  display: flex;
+  justify-content: center;
+}
+
+.rowZero:hover {
+  transform: scale(1.2, 1.2);
+  transition-duration: 0.7s;
+}
+
+.wrap3d {
+  max-width: 300px;
+  perspective-origin: center;
+  perspective: 500px;
+}
+.wrap3d div {
+  overflow: hidden;
+  box-shadow: 0 0 10px #000;
+}
+.wrap3d img {
+  width: 100%;
+}
+.wrap3d div:before {
+  position: absolute;
+  left: -150px;
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 300px;
+  background-color: #fff;
+  transition-duration: 0.5s;
+  transform: skew(-30deg, 0deg);
+}
+.wrap3d div:hover:before {
+  left: 450px;
+  transition-duration: 1.2s;
+}
+
+#box_01 {
+  transform: rotateY(-40deg);
+}
+
+#box_02 {
+  transform: scale(1, 1.3);
+}
+
+#box_03 {
+  transform: rotateY(40deg);
+}
+
 .rowFirst-wrap {
   min-height: 300px;
   display: flex;
