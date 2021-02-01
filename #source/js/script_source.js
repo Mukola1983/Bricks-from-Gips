@@ -169,6 +169,81 @@ $(document).ready(function() {
 		asNavFor:".slider_4",
 	});
 
+//Slider 5
+	$('.slider_5').slick({
+		dots:true,
+		slidesToShow:3,
+		slidesToScroll:1,
+		centerMode:true,
+		asNavFor:".sliderBig_5",
+		responsive:[    //adaptive
+			{
+				breakpoint:700,
+				settings:{
+					arrows:false,
+					autoplay:true,
+					autoplaySpeed:1500,
+					slidesToShow:2,
+				}
+			}
+		]
+	});
+	$('.sliderBig_5').slick({
+		arrows: false,
+		fade:true,
+		asNavFor:".slider_5",
+	});
+
+//Slider 6
+	$('.slider_6').slick({
+		dots:true,
+		slidesToShow:3,
+		slidesToScroll:1,
+		centerMode:true,
+		asNavFor:".sliderBig_6",
+		responsive:[    //adaptive
+			{
+				breakpoint:700,
+				settings:{
+					arrows:false,
+					autoplay:true,
+					autoplaySpeed:1500,
+					slidesToShow:2,
+				}
+			}
+		]
+	});
+	$('.sliderBig_6').slick({
+		arrows: false,
+		fade:true,
+		asNavFor:".slider_6",
+	});
+
+//Slider 7
+	$('.slider_7').slick({
+		dots:true,
+		slidesToShow:3,
+		slidesToScroll:1,
+		centerMode:true,
+		asNavFor:".sliderBig_7",
+		responsive:[    //adaptive
+			{
+				breakpoint:700,
+				settings:{
+					arrows:false,
+					autoplay:true,
+					autoplaySpeed:1500,
+					slidesToShow:2,
+				}
+			}
+		]
+	});
+	$('.sliderBig_7').slick({
+		arrows: false,
+		fade:true,
+		asNavFor:".slider_7",
+	});
+
 //Open Close slider
 
 
@@ -193,6 +268,35 @@ for (let anchor of anchors) {
 
 
 
+//Open-Close deskription
+let openBut=document.querySelectorAll('.openButt');
+let openT = 'відкрити';
+let closeT = 'закрити';
 
+for(i=0; i<openBut.length; i++){
+			let butParent = openBut[i].parentNode;
+			let thisBut = openBut[i];
 
+		openBut[i].addEventListener('click', function(){
+			thisBut.classList.toggle('downUp');
+			butParent.classList.toggle('openDescription');
+			if(thisBut.innerHTML == closeT){
+				thisBut.innerHTML = openT;
+			}else{
+				thisBut.innerHTML = closeT;
+			}
+			
+		});
+	}
 
+/*
+let thisLink=arrow[i].previousElementSibling;
+			let subMenu=arrow[i].nextElementSibling;
+			let thisArrow=arrow[i];
+
+			thisLink.classList.add('parent');
+		arrow[i].addEventListener('click', function(){
+			thisLink.classList.toggle('borderBottom')
+			subMenu.classList.toggle('open');
+			thisArrow.classList.toggle('active');
+			*/
